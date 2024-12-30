@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Floating Player",
+  "version": "1.1",
+  "description": "Mở video YouTube trong cửa sổ nổi từ URL đã copy hoặc nhấp chuột phải.",
+  "permissions": ["clipboardRead", "activeTab", "scripting", "contextMenus"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "host_permissions": ["https://www.youtube.com/*"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  }
+}
